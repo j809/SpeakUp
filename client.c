@@ -113,7 +113,7 @@ int main(int argc, char* argv[])
 	}
 	else if(child_pid > 0)
 	{
-		printf("Created new process with PID %d for receiving messages...\n",(int)child_pid);				
+		printf("Created new process with PID %d for sending messages...\n",(int)child_pid);				
 		while (fgets(buf, BUF_SIZE, stdin) != NULL)
 		{
 			printf("%s%s%sYou : %s%s", MOVEUP, CLRLINE, GRN, NRM, buf);	//'\033[1A' = Move one line up, '\033[K' = Remove all till end of line

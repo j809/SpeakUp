@@ -132,7 +132,7 @@ int main(int argc, char* argv[])
 	}
 	else if(child_pid > 0)
 	{
-		printf("Created new process with PID %d for receiving messages...\n",(int)child_pid);				
+		printf("Created new process with PID %d for sending messages...\n",(int)child_pid);				
 
 		while (fgets(buf, BUF_SIZE, stdin) != NULL)
 		{
